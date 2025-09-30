@@ -32,5 +32,6 @@ export async function generateElaboration(item: ActionItem): Promise<string> {
         contents: prompt,
     });
 
-    return response?.text || "The response from the AI was empty. This may be due to content safety filters.";
+    // FIX: Per coding guidelines, access the text property directly from the response object.
+    return response.text || "The response from the AI was empty. This may be due to content safety filters.";
 }

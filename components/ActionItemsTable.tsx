@@ -54,7 +54,8 @@ export const ActionItemsTable: React.FC<ActionItemsTableProps> = ({ items, onCha
                         id="filter-priority" 
                         value={priorityFilter}
                         onChange={(e) => setPriorityFilter(e.target.value)}
-                        className="rounded-md border-gray-600 bg-black text-white shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        // FIX: Updated form element styling to be consistent with the light theme.
+                        className="rounded-md border-gray-300 bg-white text-gray-900 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     >
                         <option value="all">All</option>
                         <option value="high">High</option>
@@ -68,7 +69,8 @@ export const ActionItemsTable: React.FC<ActionItemsTableProps> = ({ items, onCha
                         id="filter-status"
                         value={statusFilter}
                         onChange={(e) => setStatusFilter(e.target.value)}
-                        className="rounded-md border-gray-600 bg-black text-white shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        // FIX: Updated form element styling to be consistent with the light theme.
+                        className="rounded-md border-gray-300 bg-white text-gray-900 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     >
                         <option value="all">All</option>
                         {STATUS_OPTIONS.map(status => <option key={status} value={status}>{status}</option>)}
@@ -104,14 +106,16 @@ export const ActionItemsTable: React.FC<ActionItemsTableProps> = ({ items, onCha
                                         placeholder="Assign owner..." 
                                         value={item.owner}
                                         onChange={(e) => onChange(item.id, 'owner', e.target.value)}
-                                        className="w-full rounded-md border-gray-600 bg-black text-white shadow-sm text-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                        // FIX: Updated form element styling to be consistent with the light theme.
+                                        className="w-full rounded-md border-gray-300 bg-white text-gray-900 shadow-sm text-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                     />
                                 </td>
                                 <td className="px-6 py-4">
                                     <select 
                                         value={item.status}
                                         onChange={(e) => onChange(item.id, 'status', e.target.value)}
-                                        className="w-full rounded-md border-gray-600 bg-black text-white shadow-sm text-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                        // FIX: Updated form element styling to be consistent with the light theme.
+                                        className="w-full rounded-md border-gray-300 bg-white text-gray-900 shadow-sm text-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                     >
                                         {STATUS_OPTIONS.map(status => <option key={status} value={status}>{status}</option>)}
                                     </select>
@@ -121,7 +125,8 @@ export const ActionItemsTable: React.FC<ActionItemsTableProps> = ({ items, onCha
                                         placeholder="Add updates..." 
                                         value={item.notes}
                                         onChange={(e) => onChange(item.id, 'notes', e.target.value)}
-                                        className="w-full rounded-md border-gray-600 bg-black text-white shadow-sm text-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" 
+                                        // FIX: Updated form element styling to be consistent with the light theme.
+                                        className="w-full rounded-md border-gray-300 bg-white text-gray-900 shadow-sm text-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" 
                                         rows={2}
                                     ></textarea>
                                 </td>

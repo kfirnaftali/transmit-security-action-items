@@ -55,7 +55,8 @@ export const AddActionItemModal: React.FC<AddActionItemModalProps> = ({ isOpen, 
                                 id="description"
                                 value={description}
                                 onChange={(e) => setDescription(e.target.value)}
-                                className="w-full rounded-md border-gray-600 bg-black text-white shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                // FIX: Updated form element styling to be consistent with the light theme.
+                                className="w-full rounded-md border-gray-300 bg-white text-gray-900 shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
                                 rows={3}
                                 required
                                 aria-required="true"
@@ -69,7 +70,8 @@ export const AddActionItemModal: React.FC<AddActionItemModalProps> = ({ isOpen, 
                                     id="priority"
                                     value={priority}
                                     onChange={(e) => setPriority(e.target.value as Priority)}
-                                    className="w-full rounded-md border-gray-600 bg-black text-white shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                    // FIX: Updated form element styling to be consistent with the light theme.
+                                    className="w-full rounded-md border-gray-300 bg-white text-gray-900 shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
                                 >
                                     {PRIORITY_OPTIONS.map(p => <option key={p} value={p}>{p}</option>)}
                                 </select>
@@ -80,7 +82,8 @@ export const AddActionItemModal: React.FC<AddActionItemModalProps> = ({ isOpen, 
                                     id="status"
                                     value={status}
                                     onChange={(e) => setStatus(e.target.value as Status)}
-                                    className="w-full rounded-md border-gray-600 bg-black text-white shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                    // FIX: Updated form element styling to be consistent with the light theme.
+                                    className="w-full rounded-md border-gray-300 bg-white text-gray-900 shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
                                 >
                                     {STATUS_OPTIONS.map(s => <option key={s} value={s}>{s}</option>)}
                                 </select>
@@ -95,7 +98,8 @@ export const AddActionItemModal: React.FC<AddActionItemModalProps> = ({ isOpen, 
                                 value={owner}
                                 onChange={(e) => setOwner(e.target.value)}
                                 placeholder="Assign an owner..."
-                                className="w-full rounded-md border-gray-600 bg-black text-white shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                // FIX: Updated form element styling to be consistent with the light theme.
+                                className="w-full rounded-md border-gray-300 bg-white text-gray-900 shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
                             />
                         </div>
 
@@ -106,7 +110,8 @@ export const AddActionItemModal: React.FC<AddActionItemModalProps> = ({ isOpen, 
                                 value={notes}
                                 onChange={(e) => setNotes(e.target.value)}
                                 placeholder="Add any relevant updates or notes..."
-                                className="w-full rounded-md border-gray-600 bg-black text-white shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                // FIX: Updated form element styling to be consistent with the light theme.
+                                className="w-full rounded-md border-gray-300 bg-white text-gray-900 shadow-sm text-sm focus:border-indigo-500 focus:ring-indigo-500"
                                 rows={2}
                             />
                         </div>
