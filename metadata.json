@@ -1,0 +1,5 @@
+{
+  "name": "Dataflow Session Summary",
+  "description": "An interactive web application to summarize the key takeaways and track action items from the Transmit Security & PSO Dataflow Session.",
+  "requestFramePermissions": []
+}
